@@ -1,15 +1,51 @@
+html {
+  scrollbar-width: none;
+}
+
 body {margin: 0;}
 
 header {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   background-image: url(content/fur.jpg);
+}
+
+#titlogo {
+  width: 100vw;
+  top:
+  animation: rot1 20s linear infinite;
 }
 
 #arrdown {
   position: absolute;
   width: 200px;
-  top: calc(100vh - 100px);
-  left: calc(50vw - 100px);
+  top: calc(100vh - 150px);
+  left: calc(95vw - 100px);
+  animation: rot2 500ms linear infinite;
+}
+
+@keyframes rot1 {
+  0% {
+    filter: hue-rotate(30deg);
+  }
+  50% {
+    filter: hue-rotate(60deg);
+  }
+  100% {
+    filter: hue-rotate(30deg);
+  }
+}
+
+@keyframes rot2 {
+  0% {
+    filter: hue-rotate(0deg);
+    rotate: -80deg;
+  }
+  50% {
+    filter: hue-rotate(90deg);
+    rotate: -100deg;
+  }
+  100% {
+    filter: hue-rotate(180deg);
+    rotate: -80deg;
+  }
 }
