@@ -1,0 +1,15 @@
+body {margin: 0;}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(content/fur.jpg);
+}
+
+#arrdown {
+  position: absolute;
+  width: 200px;
+  top: calc(100vh - 100px);
+  left: calc(50vw - 100px);
+}
