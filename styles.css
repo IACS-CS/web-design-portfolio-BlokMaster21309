@@ -6,22 +6,30 @@ body {margin: 0;}
 
 header {
   height: 100vh;
+  width: 100vw;
   background-image: url(content/fur.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#titlogo {
+#logo {
   position: absolute;
   width: 100vw;
-  top: calc(50vh - (185px*(100vw/912px)));
   animation: rot1 20s linear infinite;
 }
 
-#arrdown {
+#fih {
   position: absolute;
   width: 200px;
   top: calc(100vh - 150px);
   left: calc(95vw - 100px);
   animation: rot2 500ms linear infinite;
+}
+
+iframe {
+  width: 100vw;
+  height: 100vh;
 }
 
 @keyframes rot1 {
@@ -48,5 +56,12 @@ header {
   100% {
     filter: hue-rotate(180deg);
     rotate: -80deg;
+  }
+}
+
+@media (min-aspect-ratio: 2.5) {
+  #logo {
+    width: unset;
+    height: 100vh;
   }
 }

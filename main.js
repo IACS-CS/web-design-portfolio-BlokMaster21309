@@ -1,6 +1,6 @@
-console.log("this message is all i do!");
+console.log("this message is no longer all i do!");
 // Get references to the button and the target element
-const scrollButton = document.getElementById('arrdown');
+const scrollButton = document.getElementById('fih');
 const targetSection = document.getElementById('content');
 
 // Add an event listener to the button
